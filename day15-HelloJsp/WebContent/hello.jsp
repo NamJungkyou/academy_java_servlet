@@ -13,6 +13,16 @@
 <title>01 Hello JSP</title>
 </head>
 <body>
+	<%!
+	// 5. <%!	: Declaration Tag : 멤버변수 선언, 메소드 선언이 들어가는 위치
+
+	//멤버변수 선언
+	private int result;
+
+	// int값 2개를 받아서 add()하고 결과를 리턴하는 메소드 정의
+	public int add(int x, int y) {
+		return x + y;
+	}%>
 	<%
 		// 3. <%--.... : Scriptlet Tag : JSP안에서 순수 자바코드를 쓸 수 있는 태그
 		//너무 많이 사용하면 가독성을 떨어뜨림
@@ -52,6 +62,11 @@
 	<%
 		}
 	%>
+	<%
+		// 메소드 선언된 add()를 사용
+		result = add(100, 200);
+	%>
+	add(100, 200) = <%=result%><br/>
 
 </body>
 </html>
