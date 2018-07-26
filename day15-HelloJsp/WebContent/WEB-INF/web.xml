@@ -60,6 +60,17 @@
   		<servlet-name>copyJsp</servlet-name>
   		<url-pattern>/copy</url-pattern>
   	</servlet-mapping>
+  	
+  	<!-- reqTest.jsp 설정 -->
+  	<servlet>
+  		<servlet-name>reqTestJsp</servlet-name>
+  		<jsp-file>/WEB-INF/jsp/request/reqTest.jsp</jsp-file>
+  	</servlet>
+  	<servlet-mapping>
+  		<servlet-name>reqTestJsp</servlet-name>
+  		<url-pattern>/reqtest</url-pattern>
+  	</servlet-mapping>
+  	
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>

@@ -17,7 +17,7 @@
 	<%
 		// 요청 주소 ==> http://localhost:8081/day15-HelloJsp/product/list
 	
-		// 사용자 정의 클래스 타이인 Product 객체 생성
+		// 사용자 정의 클래스 타입인 Product 객체 생성
 		Product adidas = new Product("S001", "슈퍼스타", 87200, 5);
 		Product reebok = new Product("S002", "리복 로얄 테크큐 티", 42000, 20);
 		Product nike = new Product("S003", "나이키 탄준 샌들", 41300, 30);
